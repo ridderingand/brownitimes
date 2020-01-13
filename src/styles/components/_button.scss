@@ -1,0 +1,73 @@
+.big-button {
+    background: $primary;
+    color: $screen;
+    font-size: $l-size;
+    width: 100%;
+    padding: $l-size 0;
+    border: none;
+    border-bottom: .6rem solid darken($primary, 30%);
+    font-weight: bold;
+    margin-bottom: $xl-size;
+}
+
+.big-button:disabled {
+    opacity: .3;
+    border-bottom: none;
+}
+
+.big-button:disabled:hover {
+    background: $primary;
+}
+
+.big-button:hover {
+    background: darken($primary, $amount: 5%);
+}
+
+.button {
+    background: $primary;
+    border: none;
+    border-bottom: .3rem solid darken($primary, 30%);
+    color: $screen;
+    font-weight: 500;
+    font-size: $m-size;
+    padding: $m-size;
+    margin: $s-size;
+}
+
+.button:hover {
+    background: darken($primary, 5%);
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $gray;
+    font-size: $m-size;
+    margin: 0 $m-size;
+}
+
+.button--link:hover {
+    color: darken($gray, 10%);
+}
+
+.button--danger {
+    color: $danger;
+    border: none;
+    background: none;
+    font-size: $m-size;
+    margin: 0 $m-size;
+}
+
+.button--danger:hover {
+    color: darken($danger, 10%);
+}
+
+.button--danger:disabled {
+    display: none;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $m-size;
+    }
+}

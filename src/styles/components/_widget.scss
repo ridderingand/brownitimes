@@ -1,0 +1,33 @@
+// Widget Header
+
+.widget {
+    background: $smoke;
+    margin-bottom: $xl-size;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.widget__placeholder {
+    color: $gray;
+    text-align: center;
+    font-size: $m-size;
+    margin: none;
+    padding: $l-size;
+    border-bottom: 1px solid lighten($light-smoke, 10%);
+}
+
+.widget-header {
+    width: 100%;
+    background: $light-smoke;
+    color: $white;
+    padding: $m-size 0;
+    font-size: $m-size;
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget-header__title {
+    margin: 0 $m-size;
+}

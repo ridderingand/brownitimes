@@ -1,0 +1,44 @@
+.ReactModalPortal > div {
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    transition: opacity 400ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: $xl-size;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal__title {
+    color: $gray;
+    font-size: $m-size;
+    font-weight: 300;
+    margin: 0 0 $s-size 0;
+}
+
+.modal__option {
+    color: $white;
+    font-size: $l-size;
+    font-weight: bold;
+    margin: $l-size;
+    word-break: break-all;
+}
+
+.modal {
+    background: $light-smoke;
+    max-width: 30rem;
+    min-width: 40vw;
+    outline: none;
+    padding: $xl-size;
+    text-align: center;
+}
